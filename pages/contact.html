@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- ENLACE EXTERNO CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="description" content="In this page you will find a form to contact us and describe the type of work you are looking for.">
+    <meta name="keywords"  content="animation, digital, hire, buy, service">
+</head>
+
+<body>
+    <header class="headerPages">
+            <a href=../index.html><img src="../img/logo.png" class="logoHeader"></a>
+            <nav class="pagesMenu">
+                <ul>
+                    <li><a href=../index.html>Home</a></li> 
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=gallery.html>Gallery</a></li>
+                    <li><a href=shop.html>Shop</a></li>
+                    <li><a href=contact.html>Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+<form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+    <section id="formBoxes">
+        <div class="form name">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Full name">
+        </div>
+        <div class="form email">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="vandenart@gmail.com">
+        </div>
+        <div class="form phone">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="tel" placeholder="+54 9 2916453603">
+        </div>
+        <div class="form note">
+            <label for="Note">Note:</label><br>
+            <textarea name="Note" cols="60" rows="10" placeholder="Leave your note here"></textarea>
+        </div>
+        <div class="form butt">
+            <button><strong>Send</strong></button> 
+        </div> 
+    </section>
+</form> 
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/vanden.art/">
+                    <i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/vdb_design">
+                    <i class="fab fa-behance"></i></a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

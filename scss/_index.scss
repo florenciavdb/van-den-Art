@@ -1,0 +1,202 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: lightgray;
+}
+
+h1 {
+    color: white;
+    font: normal 100 45px serif;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    color: rgb(95, 95, 95);
+    font: italic 100 25px serif;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    animation-duration: 4s;
+    animation-name: appear;
+    animation-delay: 0s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+h3 {
+    color: rgb(150,150, 150);
+    font: normal 100 40px serif;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    padding: 40px;
+    animation-duration: 4s;
+    animation-name: appear;
+    animation-delay: 0s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+h4 {
+    color: lightgray;
+    font: normal 100 30px serif;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.logo {
+    animation-duration: 4s;
+    animation-name: appear;
+    animation-delay: 0s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h2 {
+        color: white;
+        font: normal 100 30px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 5px;
+        padding-bottom: 0px;
+    }
+
+    h1 {
+        color: rgb(95, 95, 95);
+        font: italic 100 20px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 15px;
+    }
+
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    h2 {
+        color: white;
+        font: normal 100 35px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 5px;
+        padding-bottom: 0px;
+    }
+
+    h1 {
+        color: rgb(95, 95, 95);
+        font: italic 100 20px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 20px;
+    }
+
+    .logo {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    h2 {
+        color: white;
+        font: normal 100 40px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 5px;
+        padding-bottom: 0px;
+    }
+
+    h1 {
+        color: rgb(95, 95, 95);
+        font: italic 100 25px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 20px;
+    }
+
+    .logo {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        color: white;
+        font: normal 100 45px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 5px;
+        padding-bottom: 0px;
+    }
+
+    h1 {
+        color: rgb(95, 95, 95);
+        font: italic 100 25px serif;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        padding: 20px;
+    }
+    .logo {
+        height: 500px;
+        width: 500px;
+    }    
+}
+
+@media only screen and (min-width: 1224px) {
+h2 {
+    color: white;
+    font: normal 100 45px serif;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+    padding-bottom: 0px;
+    
+}
+
+h1 {
+    color: rgb(95, 95, 95);
+    font: italic 100 25px serif;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    }
+
+.logo {
+    height: 550px;
+    width: 550px;
+    }
+}

@@ -1,0 +1,103 @@
+.contactTittle {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#formBoxes {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    animation-duration: 4s;
+    animation-name: appear;
+    animation-delay: 0s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.form {
+    height: 45px;
+    width: 500px;
+    border: 1px solid rgb(150, 150, 150);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.note {
+    height: 200px;
+}
+
+.butt {
+    text-align: center;
+    border: none;
+}
+
+button {
+    height: 45px;
+    width: 500px;
+    background-color: rgb(80, 80, 80);
+    color: lightgray;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+button:hover {
+    color: rgb(25, 25, 25);
+
+}
+
+label {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+textarea,
+input {
+    color: white;
+    background-color: rgb(25, 25, 25);
+    border: rgb(25, 25, 25);
+    height: 30px;
+    width: 370px;
+    margin: 10px;
+    margin-top: 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    outline: none;
+}
+
+textarea {
+    margin-left: 20px;
+}
+
+::placeholder {
+    color: rgb(75, 75, 75);
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+nav i {
+    padding: 10px;
+}
+
+nav i {
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+nav i:hover {
+    color: lightgray;
+}

@@ -1,0 +1,105 @@
+.logoHeader {
+    height: 45px;
+    width: 45px;
+}
+
+header {
+    height: 115px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+.headerPages {
+    padding: 16px;
+}
+
+nav {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.pagesMenu {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul ul li {
+    display: block;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 320px) {
+    nav a {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+nav a {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    nav a {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav a {
+        font-size: 20px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    nav a {
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

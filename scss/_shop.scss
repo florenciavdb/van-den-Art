@@ -1,0 +1,66 @@
+#nft {
+    height: 1600px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center;
+    animation-duration: 4s;
+    animation-name: appear;
+    animation-delay: 0s;
+    padding: 80px;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.group {
+    height: 304px;
+    width: 700px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+}
+
+.text {
+    height: 300px;
+    width: 300px;
+}
+
+.shopList {
+    color: lightgray;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    list-style: circle;
+}
+
+.modal-content {
+    background-color: rgb(25, 25, 25);
+}
+
+.btn {
+    background-color: rgb(20, 20, 20);
+    border: rgb(20, 20, 20);
+}
+
+.btn:hover {
+    background-color: darkgray;
+}
+
+.btn-danger {
+    width: 50%;
+}
+
