@@ -1,8 +1,3 @@
-.contactTittle {
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
-}
-
 #formBoxes {
     height: 450px;
     width: 100%;
@@ -31,7 +26,7 @@
     width: 500px;
     border: 1px solid rgb(150, 150, 150);
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .note {
@@ -48,7 +43,7 @@ button {
     width: 500px;
     background-color: rgb(80, 80, 80);
     color: lightgray;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -86,18 +81,154 @@ textarea {
     font-size: 18px;
 }
 
-nav i {
-    padding: 10px;
+@media only screen and (max-width: 1224px) {
+    #formBoxes {
+        height: 420px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .form {
+        height: 40px;
+        width: 450px;
+    }
+    
+    .note {
+        height: 200px;
+    }
+    
+    button {
+        height: 45px;
+        width: 450px;
+    }
+    
+    textarea,
+    input {
+        height: 30px;
+        width: 370px;
+        margin-left: 65px;
+    }
 }
 
-nav i {
-    font-size: 20px;
-    color: rgb(150, 150, 150);
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 20px;
+@media only screen and (max-width: 768px) { /* SE DESFASA EL INPUT */
+    #formBoxes {
+        height: 360px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .form {
+        height: 35px;
+        width: 380px;
+    }
+
+    label {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    
+    .note {
+        height: 180px;
+    }
+        
+    button {
+        height: 35px;
+        width: 380px;
+    }
+    
+    textarea,
+    input {
+        height: 30px;
+        width: 300px;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-left: 60px;
+    }
 }
 
-nav i:hover {
-    color: lightgray;
+@media only screen and (max-width: 480px) { /* SE DESFASA EL INPUT */
+    #formBoxes {
+        height: 350px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .form {
+        height: 30px;
+        width: 270px;
+        font-size: 18px;
+    }
+
+    .note {
+        height: 180px;
+    }
+        
+    button {
+        height: 30px;
+        width: 270px;
+        font-size: 18px;
+    }
+    
+    textarea,
+    input {
+        height: 20px;
+        width: 200px;
+        font-size: 16px;
+        margin-left: 55px;
+        margin-top: 0px;
+    }
+
+    ::placeholder{
+        font-size: 16px;
+        margin-left: 65px;
+    }
+}
+
+@media only screen and (max-width: 320px) { /* SE DESFASA EL INPUT */
+    #formBoxes {
+        height: 300px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .form {
+        height: 25px;
+        width: 200px;
+        font-size: 14px;
+        
+    }
+    
+    label {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .note {
+        height: 180px;
+    }
+        
+    button {
+        height: 20px;
+        width: 200px;
+        font-size: 14px;
+    }
+    
+    textarea,
+    input {
+        height: 20px;
+        width: 150px;
+        font-size: 14px;
+        margin-left: 45px;
+        margin-top: 0;
+    }
+
+    ::placeholder{
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    
+    nav i {
+        font-size: 15px;
+        margin-top: 15px;
+    }
 }

@@ -28,7 +28,12 @@
     justify-content: space-between;
 }
 
-.image {
+.imageShop {
+    height: 300px;
+    width: 300px;
+}
+
+.platonic{
     height: 300px;
     width: 300px;
 }
@@ -44,23 +49,154 @@
     margin-left: 20px;
     margin-top: 10px;
     font-family: 'Oswald', sans-serif;
-    list-style: circle;
+    list-style: none;
 }
 
-.modal-content {
-    background-color: rgb(25, 25, 25);
+@media only screen and (max-width: 1224px) {
+    #nft {
+        height: 1200px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .group {
+        height: 235px;
+        width: 470px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+    
+    .imageShop {
+        height: 230px;
+        width: 230px;
+    }
+       
+    .text {
+        height: 230px;
+        width: 230px;
+    }
+    
+    .shopList {
+        color: lightgray;
+        font-size: 18px;
+        margin-left: 30px;
+        margin-top: 10px;
+        font-family: 'Oswald', sans-serif;
+        list-style: none;
+        line-height: 1.2em;
+    }
 }
 
-.btn {
-    background-color: rgb(20, 20, 20);
-    border: rgb(20, 20, 20);
+@media only screen and (max-width: 768px) {
+    #nft {
+        height: 1150px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .group {
+        height: 225px;
+        width: 460px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+    
+    .imageShop {
+        height: 225px;
+        width: 225px;
+    }
+       
+    .text {
+        height: 225px;
+        width: 225px;
+    }
+    
+    .shopList {
+        color: lightgray;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 6px;
+        font-family: 'Oswald', sans-serif;
+        list-style: none;
+        line-height: 1.5em;
+    }
 }
 
-.btn:hover {
-    background-color: darkgray;
+@media only screen and (max-width: 480px) { 
+    #nft {
+        height: 760px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .group {
+        height: 140px;
+        width: 300px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+    
+    .imageShop {
+        height: 145px;
+        width: 145px;
+        margin-left: 0px;
+    }
+       
+    .text {
+        height: 145px;
+        width: 145px;
+    }
+    
+    .shopList {
+        color: lightgray;
+        font-size: 13px;
+        margin-left: 0px;
+        margin-top: 5px;
+        font-family: 'Oswald', sans-serif;
+        list-style: none;
+        line-height: 1.1em;
+    }
 }
 
-.btn-danger {
-    width: 50%;
+@media only screen and (max-width: 320px) { /* NO SE CENTRA!! :( */
+    #nft {
+        height: 550px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .group {
+        height: 105px;
+        width: 210px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+    
+    .imageShop {
+        height: 100px;
+        width: 100px;
+    }
+       
+    .text {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .shopList {
+        color: lightgray;
+        font-size: 10px;
+        margin-left: 0px;
+        margin-top: 5px;
+        font-family: 'Oswald', sans-serif;
+        list-style: none;
+        line-height: 1em;
+    }
 }
-

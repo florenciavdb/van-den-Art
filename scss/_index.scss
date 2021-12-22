@@ -3,16 +3,9 @@ body {
     color: lightgray;
 }
 
-h1 {
-    color: white;
-    font: normal 100 45px serif;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-}
-
 h2 {
     color: rgb(95, 95, 95);
-    font: italic 100 25px serif;
+    font: italic 100 28px serif;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     padding: 20px;
@@ -81,44 +74,34 @@ img {
     }
 }
 
-@media only screen and (max-width: 320px) {
-    h2 {
-        color: white;
-        font: normal 100 30px serif;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        padding: 5px;
-        padding-bottom: 0px;
+@media only screen and (max-width: 1224px) {
+h2 {
+    font: italic 100 25px serif;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
     }
 
-    h1 {
-        color: rgb(95, 95, 95);
-        font: italic 100 20px serif;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        padding: 15px;
-    }
-
-    .logo {
-        height: 150px;
-        width: 150px;
+.logo {
+    height: 550px;
+    width: 550px;
     }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 768px) {
     h2 {
-        color: white;
-        font: normal 100 35px serif;
-        text-align: center;
+        font: italic 100 25px serif;
         font-family: 'Oswald', sans-serif;
-        padding: 5px;
-        padding-bottom: 0px;
+        padding: 20px;
     }
+    .logo {
+        height: 400px;
+        width: 400px;
+    }    
+}
 
-    h1 {
-        color: rgb(95, 95, 95);
-        font: italic 100 20px serif;
-        text-align: center;
+@media only screen and (max-width: 480px) {
+    h2 {
+        font: italic 100 25px serif;
         font-family: 'Oswald', sans-serif;
         padding: 20px;
     }
@@ -129,74 +112,15 @@ img {
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 320px) { 
     h2 {
-        color: white;
-        font: normal 100 40px serif;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        padding: 5px;
-        padding-bottom: 0px;
-    }
-
-    h1 {
-        color: rgb(95, 95, 95);
-        font: italic 100 25px serif;
-        text-align: center;
+        font: italic 100 20px serif;
         font-family: 'Oswald', sans-serif;
         padding: 20px;
     }
 
     .logo {
-        height: 400px;
-        width: 400px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    h2 {
-        color: white;
-        font: normal 100 45px serif;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        padding: 5px;
-        padding-bottom: 0px;
-    }
-
-    h1 {
-        color: rgb(95, 95, 95);
-        font: italic 100 25px serif;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        padding: 20px;
-    }
-    .logo {
-        height: 500px;
-        width: 500px;
-    }    
-}
-
-@media only screen and (min-width: 1224px) {
-h2 {
-    color: white;
-    font: normal 100 45px serif;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    padding: 5px;
-    padding-bottom: 0px;
-    
-}
-
-h1 {
-    color: rgb(95, 95, 95);
-    font: italic 100 25px serif;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    padding: 20px;
-    }
-
-.logo {
-    height: 550px;
-    width: 550px;
+        height: 200px;
+        width: 200px;
     }
 }

@@ -14,16 +14,9 @@ body {
   color: lightgray;
 }
 
-h1 {
-  color: white;
-  font: normal 100 45px serif;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-}
-
 h2 {
   color: #5f5f5f;
-  font: italic 100 25px serif;
+  font: italic 100 28px serif;
   text-align: center;
   font-family: "Oswald", sans-serif;
   padding: 20px;
@@ -86,112 +79,9 @@ img {
     opacity: 100;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1224px) {
   h2 {
-    color: white;
-    font: normal 100 30px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  h1 {
-    color: #5f5f5f;
-    font: italic 100 20px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 15px;
-  }
-
-  .logo {
-    height: 150px;
-    width: 150px;
-  }
-}
-@media only screen and (min-width: 320px) {
-  h2 {
-    color: white;
-    font: normal 100 35px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  h1 {
-    color: #5f5f5f;
-    font: italic 100 20px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 20px;
-  }
-
-  .logo {
-    height: 300px;
-    width: 300px;
-  }
-}
-@media only screen and (min-width: 480px) {
-  h2 {
-    color: white;
-    font: normal 100 40px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  h1 {
-    color: #5f5f5f;
     font: italic 100 25px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 20px;
-  }
-
-  .logo {
-    height: 400px;
-    width: 400px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    color: white;
-    font: normal 100 45px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  h1 {
-    color: #5f5f5f;
-    font: italic 100 25px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 20px;
-  }
-
-  .logo {
-    height: 500px;
-    width: 500px;
-  }
-}
-@media only screen and (min-width: 1224px) {
-  h2 {
-    color: white;
-    font: normal 100 45px serif;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  h1 {
-    color: #5f5f5f;
-    font: italic 100 25px serif;
-    text-align: center;
     font-family: "Oswald", sans-serif;
     padding: 20px;
   }
@@ -201,13 +91,50 @@ img {
     width: 550px;
   }
 }
+@media only screen and (max-width: 768px) {
+  h2 {
+    font: italic 100 25px serif;
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+  }
+
+  .logo {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    font: italic 100 25px serif;
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+  }
+
+  .logo {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h2 {
+    font: italic 100 20px serif;
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+  }
+
+  .logo {
+    height: 200px;
+    width: 200px;
+  }
+}
 .aboutGrid {
   height: 100%;
   width: 100%;
+  background-image: url(../img/back1.png);
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-columns: 350px 320px 320px 350px;
+  grid-template-columns: 300px 280px 280px 300px;
   grid-template-rows: 250px 250px 250px;
   justify-content: center;
   padding: 80px;
@@ -216,6 +143,10 @@ img {
 .para {
   font-family: "Oswald", sans-serif;
   color: black;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: left;
+  font-size: 22px;
   animation-duration: 4s;
   animation-name: appear;
   animation-delay: 0s;
@@ -231,11 +162,17 @@ img {
 }
 #aboutTittle {
   color: white;
+  text-align: right;
+  font-size: 50px;
 }
 
 .list {
   font-family: "Oswald", sans-serif;
   color: white;
+  grid-column: 3/5;
+  grid-row: 3/4;
+  text-align: right;
+  font-size: 22px;
   animation-duration: 4s;
   animation-name: appear;
   animation-delay: 0s;
@@ -253,44 +190,49 @@ img {
   list-style: none;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 1224px) {
   .aboutGrid {
-    background-image: url(../img/back2.png);
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/back1.png);
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 250px 100px 250px;
+    grid-template-columns: 180px 180px 180px 180px;
+    grid-template-rows: 250px 150px 250px;
     justify-content: center;
     padding: 50px;
   }
 
   .para {
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 1/2;
-    text-align: center;
-    font-size: 15px;
+    text-align: left;
+    font-size: 20px;
   }
 
   #aboutTittle {
-    font-size: 28px;
-    text-align: center;
+    font-size: 50px;
+    text-align: right;
   }
 
   .list {
-    padding: 50px;
-    grid-column: 1/2;
+    grid-column: 3/5;
     grid-row: 3/4;
-    text-align: center;
-    font-size: 15px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  #aboutList {
+    list-style: none;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 768px) {
   .aboutGrid {
     background-image: url(../img/back1.png);
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 130px 130px;
     grid-template-rows: 250px 200px 250px;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
   }
 
   .para {
@@ -306,77 +248,72 @@ img {
   }
 
   .list {
-    padding: 50px;
+    padding: 10px;
     grid-column: 1/3;
     grid-row: 3/4;
     text-align: center;
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
   .aboutGrid {
-    grid-template-columns: 100px 250px 250px 100px;
-    grid-template-rows: 250px 250px 250px;
-  }
-
-  .para {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    text-align: left;
-    font-size: 20px;
-    animation-duration: 4s;
-    animation-name: appear;
-    animation-delay: 0s;
-  }
-
-  #aboutTittle {
-    font-size: 45px;
-    text-align: right;
-  }
-
-  .list {
-    grid-column: 2/5;
-    grid-row: 3/4;
-    font-size: 20px;
-    text-align: right;
-    animation-duration: 4s;
-    animation-name: appear;
-    animation-delay: 0s;
-  }
-}
-@media only screen and (min-width: 1224px) {
-  .aboutGrid {
-    height: 100%;
-    width: 100%;
     background-image: url(../img/back1.png);
     display: grid;
-    grid-template-columns: 350px 200px 200px 350px;
-    grid-template-rows: 250px 150px 250px;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 250px 200px 250px;
     justify-content: center;
-    padding: 80px;
+    padding: 30px;
   }
 
   .para {
     grid-column: 1/3;
     grid-row: 1/2;
-    text-align: left;
-    font-size: 22px;
+    text-align: center;
+    font-size: 18px;
   }
 
   #aboutTittle {
-    font-size: 50px;
-    text-align: right;
+    font-size: 40px;
+    text-align: center;
   }
 
   .list {
-    grid-column: 3/5;
+    padding: 10px;
+    grid-column: 1/3;
     grid-row: 3/4;
-    font-size: 22px;
-    text-align: right;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .aboutGrid {
+    background-image: url(../img/back5.png);
+    background-position: left;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 250px 100px 200px;
+    justify-content: center;
+    padding: 20px;
   }
 
-  #aboutList {
-    list-style: none;
+  .para {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #aboutTittle {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .list {
+    padding: 1px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 15px;
   }
 }
 .galleryTittle {
@@ -388,6 +325,10 @@ img {
   height: auto;
   width: auto;
   display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(7, 220px);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
   margin: auto;
   justify-content: center;
   align-content: center;
@@ -489,224 +430,201 @@ img {
   filter: grayscale(100%);
 }
 
-@media only screen and (max-width: 320px) {
-  .galleryGrid {
-    grid-auto-columns: 180px;
-    grid-auto-rows: 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
+#item13 {
+  background-image: url(../img/13.png);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
 }
-@media only screen and (min-width: 320px) {
-  .galleryGrid {
-    grid-auto-columns: 180px 180px;
-    grid-auto-rows: 180px 180px 180px 180px 180px 180px 180px 180px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
 
-  #item1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-
-  #item2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  #item3 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  #item4 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  #item5 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  #item6 {
-    grid-column: 1/3;
-    grid-row: 4/5;
-  }
-
-  #item7 {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  #item8 {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-
-  #item9 {
-    grid-column: 2/3;
-    grid-row: 5/7;
-  }
-
-  #item10 {
-    grid-column: 1/2;
-    grid-row: 7/8;
-  }
-
-  #item11 {
-    grid-column: 2/3;
-    grid-row: 7/8;
-  }
-
-  #item12 {
-    grid-column: 1/3;
-    grid-row: 8/9;
-  }
+#item14 {
+  background-image: url(../img/14.png);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
 }
-@media only screen and (min-width: 480px) {
-  .galleryGrid {
-    grid-auto-columns: 250px 250px;
-    grid-auto-rows: 250px 250px 250px 250px 250px 250px 250px 250px;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-  }
 
-  #item1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-
-  #item2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  #item3 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  #item4 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  #item5 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  #item6 {
-    grid-column: 1/3;
-    grid-row: 4/5;
-  }
-
-  #item7 {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  #item8 {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-
-  #item9 {
-    grid-column: 2/3;
-    grid-row: 5/7;
-  }
-
-  #item10 {
-    grid-column: 1/2;
-    grid-row: 7/8;
-  }
-
-  #item11 {
-    grid-column: 2/3;
-    grid-row: 7/8;
-  }
-
-  #item12 {
-    grid-column: 1/3;
-    grid-row: 8/9;
-  }
+#item15 {
+  background-image: url(../img/15.png);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
 }
-@media only screen and (min-width: 768px) {
+
+#item16 {
+  background-image: url(../img/16.png);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+#item1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+#item1:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#item2:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item3 {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+
+#item3:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#item4:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item5 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#item5:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item6 {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+#item6:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item7 {
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+
+#item7:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item8 {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+#item8:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item9 {
+  grid-column: 3/4;
+  grid-row: 4/6;
+}
+
+#item9:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item10 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+#item10:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item11 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+#item11:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item12 {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+#item12:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item13 {
+  grid-column: 1/2;
+  grid-row: 6/8;
+}
+
+#item13:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item14 {
+  grid-column: 2/4;
+  grid-row: 6/8;
+}
+
+#item14:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item15 {
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+
+#item15:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+#item16 {
+  grid-column: 4/5;
+  grid-row: 7/8;
+}
+
+#item16:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+@media only screen and (max-width: 1224px) {
   .galleryGrid {
-    grid-auto-columns: 250px 250px 250px;
-    grid-auto-rows: 250px 250px 250px 250px 250px 250px;
+    grid-template-columns: repeat(4, 155px);
+    grid-template-rows: repeat(7, 155px);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-  }
-
-  #item1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-
-  #item2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  #item3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-
-  #item4 {
-    grid-column: 2/4;
-    grid-row: 2/3;
-  }
-
-  #item5 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  #item6 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  #item7 {
-    grid-column: 3/4;
-    grid-row: 3/5;
-  }
-
-  #item8 {
-    grid-column: 1/3;
-    grid-row: 4/5;
-  }
-
-  #item9 {
-    grid-column: 1/2;
-    grid-row: 5/7;
-  }
-
-  #item10 {
-    grid-column: 2/3;
-    grid-row: 5/6;
-  }
-
-  #item11 {
-    grid-column: 3/4;
-    grid-row: 5/6;
-  }
-
-  #item12 {
-    grid-column: 2/4;
-    grid-row: 6/7;
-  }
-}
-@media only screen and (min-width: 1224px) {
-  .galleryGrid {
-    grid-auto-columns: 250px 250px 250px;
-    grid-auto-rows: 250px 250px 250px 250px 250px;
-    grid-column-gap: 70px;
-    grid-row-gap: 70px;
+    padding: 50px;
   }
 
   #item1 {
@@ -828,6 +746,295 @@ img {
     filter: grayscale(0%);
     transition: 2s;
   }
+
+  #item13 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+  }
+
+  #item14 {
+    grid-column: 2/4;
+    grid-row: 6/8;
+  }
+
+  #item15 {
+    grid-column: 4/5;
+    grid-row: 6/7;
+  }
+
+  #item16 {
+    grid-column: 4/5;
+    grid-row: 7/8;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* LA GRID NO SE CENTRA HELP */
+  .galleryGrid {
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(8, 120px);
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 30px;
+  }
+
+  #item1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  #item2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #item3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  #item4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  #item5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #item6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  #item7 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+
+  #item8 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  #item9 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+
+  #item10 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+  #item11 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+
+  #item12 {
+    grid-column: 2/4;
+    grid-row: 6/7;
+  }
+
+  #item13 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
+  #item14 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+
+  #item15 {
+    grid-column: 3/4;
+    grid-row: 7/9;
+  }
+
+  #item16 {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .galleryGrid {
+    grid-template-columns: 180px;
+    grid-template-rows: repeat(12, 180px);
+    grid-row-gap: 20px;
+    padding: 30px;
+  }
+
+  #item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #item2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #item3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #item4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  #item5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  #item6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  #item7 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
+  #item8 {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+
+  #item9 {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+
+  #item10 {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+
+  #item11 {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+
+  #item12 {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+
+  #item13 {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+
+  #item14 {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+
+  #item15 {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+
+  #item16 {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .galleryGrid {
+    grid-template-columns: 140px;
+    grid-template-rows: repeat(12, 140px);
+    grid-row-gap: 20px;
+    padding: 20px;
+  }
+
+  #item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #item2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #item3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #item4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  #item5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  #item6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  #item7 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
+  #item8 {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+
+  #item9 {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+
+  #item10 {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+
+  #item11 {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+
+  #item12 {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+
+  #item13 {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+
+  #item14 {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+
+  #item15 {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+
+  #item16 {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
 }
 #nft {
   height: 1600px;
@@ -857,7 +1064,12 @@ img {
   justify-content: space-between;
 }
 
-.image {
+.imageShop {
+  height: 300px;
+  width: 300px;
+}
+
+.platonic {
   height: 300px;
   width: 300px;
 }
@@ -873,31 +1085,155 @@ img {
   margin-left: 20px;
   margin-top: 10px;
   font-family: "Oswald", sans-serif;
-  list-style: circle;
+  list-style: none;
 }
 
-.modal-content {
-  background-color: #191919;
-}
+@media only screen and (max-width: 1224px) {
+  #nft {
+    height: 1200px;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.btn {
-  background-color: #141414;
-  border: #141414;
-}
+  .group {
+    height: 235px;
+    width: 470px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+  }
 
-.btn:hover {
-  background-color: darkgray;
-}
+  .imageShop {
+    height: 230px;
+    width: 230px;
+  }
 
-.btn-danger {
-  width: 50%;
-}
+  .text {
+    height: 230px;
+    width: 230px;
+  }
 
-.contactTittle {
-  font-size: 50px;
-  font-family: "Oswald", sans-serif;
+  .shopList {
+    color: lightgray;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    line-height: 1.2em;
+  }
 }
+@media only screen and (max-width: 768px) {
+  #nft {
+    height: 1150px;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .group {
+    height: 225px;
+    width: 460px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+  }
+
+  .imageShop {
+    height: 225px;
+    width: 225px;
+  }
+
+  .text {
+    height: 225px;
+    width: 225px;
+  }
+
+  .shopList {
+    color: lightgray;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 6px;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    line-height: 1.5em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #nft {
+    height: 760px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .group {
+    height: 140px;
+    width: 300px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+  }
+
+  .imageShop {
+    height: 145px;
+    width: 145px;
+    margin-left: 0px;
+  }
+
+  .text {
+    height: 145px;
+    width: 145px;
+  }
+
+  .shopList {
+    color: lightgray;
+    font-size: 13px;
+    margin-left: 0px;
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    line-height: 1.1em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* NO SE CENTRA!! :( */
+  #nft {
+    height: 550px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .group {
+    height: 105px;
+    width: 210px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+  }
+
+  .imageShop {
+    height: 100px;
+    width: 100px;
+  }
+
+  .text {
+    height: 100px;
+    width: 100px;
+  }
+
+  .shopList {
+    color: lightgray;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    line-height: 1em;
+  }
+}
 #formBoxes {
   height: 450px;
   width: 100%;
@@ -924,7 +1260,7 @@ img {
   width: 500px;
   border: 1px solid #969696;
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .note {
@@ -941,7 +1277,7 @@ button {
   width: 500px;
   background-color: #505050;
   color: lightgray;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -978,35 +1314,181 @@ textarea {
   font-size: 18px;
 }
 
-nav i {
-  padding: 10px;
-}
+@media only screen and (max-width: 1224px) {
+  #formBoxes {
+    height: 420px;
+    width: 100%;
+    margin-top: 50px;
+  }
 
-nav i {
-  font-size: 20px;
-  color: #969696;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 20px;
-}
+  .form {
+    height: 40px;
+    width: 450px;
+  }
 
-nav i:hover {
-  color: lightgray;
-}
+  .note {
+    height: 200px;
+  }
 
-.logoHeader {
-  height: 45px;
-  width: 45px;
-}
+  button {
+    height: 45px;
+    width: 450px;
+  }
 
+  textarea,
+input {
+    height: 30px;
+    width: 370px;
+    margin-left: 65px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* SE DESFASA EL INPUT */
+  #formBoxes {
+    height: 360px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .form {
+    height: 35px;
+    width: 380px;
+  }
+
+  label {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .note {
+    height: 180px;
+  }
+
+  button {
+    height: 35px;
+    width: 380px;
+  }
+
+  textarea,
+input {
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 60px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* SE DESFASA EL INPUT */
+  #formBoxes {
+    height: 350px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .form {
+    height: 30px;
+    width: 270px;
+    font-size: 18px;
+  }
+
+  .note {
+    height: 180px;
+  }
+
+  button {
+    height: 30px;
+    width: 270px;
+    font-size: 18px;
+  }
+
+  textarea,
+input {
+    height: 20px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 55px;
+    margin-top: 0px;
+  }
+
+  ::placeholder {
+    font-size: 16px;
+    margin-left: 65px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* SE DESFASA EL INPUT */
+  #formBoxes {
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .form {
+    height: 25px;
+    width: 200px;
+    font-size: 14px;
+  }
+
+  label {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .note {
+    height: 180px;
+  }
+
+  button {
+    height: 20px;
+    width: 200px;
+    font-size: 14px;
+  }
+
+  textarea,
+input {
+    height: 20px;
+    width: 150px;
+    font-size: 14px;
+    margin-left: 45px;
+    margin-top: 0;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  nav i {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+}
 header {
   height: 115px;
   width: 100%;
   background-color: #141414;
 }
 
+.logoHeader {
+  height: 45px;
+  width: 45px;
+  margin-top: 14px;
+}
+
 .headerPages {
-  padding: 16px;
+  padding: 4px;
+}
+
+h1 {
+  color: white;
+  font: normal 100 45px serif;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  padding: 3px;
+  animation-duration: 4s;
+  animation-name: appear;
+  animation-delay: 0s;
 }
 
 nav {
@@ -1027,6 +1509,7 @@ nav {
 
 nav ul {
   list-style: none;
+  padding: 5px;
 }
 
 nav ul li {
@@ -1060,39 +1543,198 @@ ul ul li {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1224px) {
+  .logoHeader {
+    height: 40px;
+    width: 40px;
+    margin-top: 18px;
+  }
+
+  h1 {
+    color: white;
+    font: normal 100 45px serif;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding: 3px;
+  }
+
   nav a {
-    font-size: 14px;
-    margin-left: 5px;
-    margin-right: 5px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
-@media only screen and (min-width: 320px) {
-  nav a {
-    font-size: 18px;
-    margin-left: 5px;
-    margin-right: 5px;
+@media only screen and (max-width: 768px) {
+  .logoHeader {
+    height: 40px;
+    width: 40px;
+    margin-top: 18px;
   }
-}
-@media only screen and (min-width: 480px) {
+
+  h1 {
+    color: white;
+    font: normal 100 45px serif;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding: 3px;
+  }
+
   nav a {
     font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
+  .logoHeader {
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+  }
+
+  h1 {
+    color: white;
+    font: normal 100 40px serif;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding: 5px;
+  }
+
   nav a {
-    font-size: 20px;
-    margin-left: 45px;
-    margin-right: 45px;
+    font-size: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  header {
+    height: 105px;
   }
 }
-@media only screen and (min-width: 1224px) {
+@media only screen and (max-width: 320px) {
+  .logoHeader {
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+  }
+
+  h1 {
+    color: white;
+    font: normal 100 35px serif;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding: 5px;
+  }
+
   nav a {
-    font-size: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 14px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  header {
+    height: 100px;
+  }
+}
+footer {
+  animation-duration: 10s;
+  animation-name: appear;
+  animation-delay: 0s;
+  padding: 80px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+hr {
+  display: block;
+  margin: auto;
+  width: 100%;
+  opacity: 0.08;
+}
+
+nav i {
+  font-size: 20px;
+  color: #505050;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+nav i:hover {
+  color: lightgray;
+}
+
+.footerList {
+  color: #505050;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5em;
+  list-style: none;
+}
+
+@media only screen and (max-width: 1224px) {
+  footer {
+    padding: 50px;
+  }
+
+  nav i {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footerList {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 50px;
+  }
+
+  nav i {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footerList {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer {
+    padding: 30px;
+  }
+
+  nav i {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footerList {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer {
+    padding: 30px;
+  }
+
+  nav i {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footerList {
+    font-size: 12px;
   }
 }
 
