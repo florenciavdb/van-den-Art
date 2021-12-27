@@ -47,9 +47,10 @@
     color: lightgray;
     font-size: 20px;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
     font-family: 'Oswald', sans-serif;
     list-style: none;
+    line-height: 3.1em;
 }
 
 @media only screen and (max-width: 1224px) {
@@ -82,17 +83,16 @@
         color: lightgray;
         font-size: 18px;
         margin-left: 30px;
-        margin-top: 10px;
         font-family: 'Oswald', sans-serif;
         list-style: none;
-        line-height: 1.2em;
+        line-height: 2.5em;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #nft {
         height: 1150px;
-        padding: 50px;
+        padding: 40px;
         justify-content: space-between;
         align-items: center;
     }
@@ -117,12 +117,11 @@
     
     .shopList {
         color: lightgray;
-        font-size: 15px;
+        font-size: 17px;
         margin-left: 10px;
-        margin-top: 6px;
         font-family: 'Oswald', sans-serif;
         list-style: none;
-        line-height: 1.5em;
+        line-height: 2.5em;
     }
 }
 
@@ -157,14 +156,13 @@
         color: lightgray;
         font-size: 13px;
         margin-left: 0px;
-        margin-top: 5px;
         font-family: 'Oswald', sans-serif;
         list-style: none;
-        line-height: 1.1em;
+        line-height: 2.2em;
     }
 }
 
-@media only screen and (max-width: 320px) { /* NO SE CENTRA!! :( */
+@media only screen and (max-width: 320px) { 
     #nft {
         height: 550px;
         padding: 30px;
@@ -194,9 +192,8 @@
         color: lightgray;
         font-size: 10px;
         margin-left: 0px;
-        margin-top: 5px;
         font-family: 'Oswald', sans-serif;
         list-style: none;
-        line-height: 1em;
+        line-height: 2em;
     }
 }

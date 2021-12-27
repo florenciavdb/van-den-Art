@@ -49,7 +49,6 @@ button {
 
 button:hover {
     color: rgb(25, 25, 25);
-
 }
 
 label {
@@ -92,11 +91,16 @@ textarea {
         height: 40px;
         width: 450px;
     }
-    
-    .note {
-        height: 200px;
+
+    label {
+        margin-left: 10px;
+        font-size: 18px;
     }
     
+    .note {
+        height: 180px;
+    }
+        
     button {
         height: 40px;
         width: 450px;
@@ -104,9 +108,15 @@ textarea {
     
     textarea,
     input {
-        height: 25px;
-        width: 370px;
+        height: 38px;
+        width: 360px;
+        font-size: 18px;
         margin-top: 0px;
+    }
+
+    ::placeholder{
+        font-size: 18px;
+        margin-left: 5px;
     }
 }
 
@@ -114,7 +124,7 @@ textarea {
     #formBoxes {
         height: 360px;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .form {
@@ -124,7 +134,7 @@ textarea {
 
     label {
         margin-left: 10px;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .note {
@@ -143,93 +153,91 @@ textarea {
         font-size: 16px;
         margin-top: 0px;
     }
+
+    ::placeholder{
+        font-size: 16px;
+        margin-left: 5px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     #formBoxes {
-        height: 350px;
+        height: 290px;
         width: 100%;
         margin-top: 30px;
     }
 
     .form {
-        height: 30px;
-        width: 270px;
-        font-size: 18px;
+        height: 32px;
+        width: 280px;
     }
 
     label {
         margin-left: 10px;
-        font-size: 18px;
+        font-size: 15px;
     }
     
     .note {
-        height: 180px;
+        height: 130px;
     }
         
     button {
-        height: 30px;
-        width: 290px;
-        font-size: 18px;
+        height: 32px;
+        width: 280px;
+        font-size: 14px;
     }
     
     textarea,
     input {
         height: 25px;
-        width: 200px;
-        font-size: 14px;
+        width: 140px;
+        font-size: 15px;
         margin-top: 0px;
     }
 
     ::placeholder{
-        font-size: 16px;
-        margin-left: 65px;
+        font-size: 15px;
+        margin-left: 5px;
     }
 }
 
 @media only screen and (max-width: 320px) {
     #formBoxes {
-        height: 300px;
+        height: 290px;
         width: 100%;
         margin-top: 30px;
     }
 
     .form {
-        height: 25px;
-        width: 200px;
-        font-size: 14px;
-        
+        height: 30px;
+        width: 210px;
     }
-    
+
     label {
         margin-left: 10px;
         font-size: 14px;
     }
-
+    
     .note {
-        height: 180px;
+        height: 130px;
     }
         
     button {
-        height: 20px;
-        width: 200px;
+        height: 30px;
+        width: 210px;
         font-size: 14px;
     }
     
     textarea,
     input {
-        height: 20px;
-        width: 170px;
+        height: 25px;
+        width: 140px;
         font-size: 14px;
         margin-top: 0px;
     }
 
     ::placeholder{
         font-size: 14px;
-    }
-    
-    nav i {
-        font-size: 15px;
-        margin-top: 15px;
+        margin-left: 5px;
     }
 }

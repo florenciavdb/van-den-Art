@@ -232,7 +232,7 @@ img {
     grid-template-columns: 130px 130px;
     grid-template-rows: 250px 200px 250px;
     justify-content: center;
-    padding: 30px;
+    padding: 40px;
   }
 
   .para {
@@ -287,8 +287,8 @@ img {
 }
 @media only screen and (max-width: 320px) {
   .aboutGrid {
-    background-image: url(../img/back5.png);
-    background-position: left;
+    background-image: url(../img/back3.png);
+    background-position: center;
     display: grid;
     grid-template-columns: 200px;
     grid-template-rows: 250px 100px 200px;
@@ -713,7 +713,7 @@ img {
     grid-template-rows: repeat(8, 120px);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    padding: 30px;
+    padding: 40px;
   }
 
   #item1 {
@@ -1019,9 +1019,10 @@ img {
   color: lightgray;
   font-size: 20px;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 0px;
   font-family: "Oswald", sans-serif;
   list-style: none;
+  line-height: 3.1em;
 }
 
 @media only screen and (max-width: 1224px) {
@@ -1054,16 +1055,15 @@ img {
     color: lightgray;
     font-size: 18px;
     margin-left: 30px;
-    margin-top: 10px;
     font-family: "Oswald", sans-serif;
     list-style: none;
-    line-height: 1.2em;
+    line-height: 2.5em;
   }
 }
 @media only screen and (max-width: 768px) {
   #nft {
     height: 1150px;
-    padding: 50px;
+    padding: 40px;
     justify-content: space-between;
     align-items: center;
   }
@@ -1088,12 +1088,11 @@ img {
 
   .shopList {
     color: lightgray;
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 10px;
-    margin-top: 6px;
     font-family: "Oswald", sans-serif;
     list-style: none;
-    line-height: 1.5em;
+    line-height: 2.5em;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1127,14 +1126,12 @@ img {
     color: lightgray;
     font-size: 13px;
     margin-left: 0px;
-    margin-top: 5px;
     font-family: "Oswald", sans-serif;
     list-style: none;
-    line-height: 1.1em;
+    line-height: 2.2em;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* NO SE CENTRA!! :( */
   #nft {
     height: 550px;
     padding: 30px;
@@ -1164,10 +1161,9 @@ img {
     color: lightgray;
     font-size: 10px;
     margin-left: 0px;
-    margin-top: 5px;
     font-family: "Oswald", sans-serif;
     list-style: none;
-    line-height: 1em;
+    line-height: 2em;
   }
 }
 #formBoxes {
@@ -1262,8 +1258,13 @@ textarea {
     width: 450px;
   }
 
+  label {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
   .note {
-    height: 200px;
+    height: 180px;
   }
 
   button {
@@ -1273,16 +1274,22 @@ textarea {
 
   textarea,
 input {
-    height: 25px;
-    width: 370px;
+    height: 38px;
+    width: 360px;
+    font-size: 18px;
     margin-top: 0px;
+  }
+
+  ::placeholder {
+    font-size: 18px;
+    margin-left: 5px;
   }
 }
 @media only screen and (max-width: 768px) {
   #formBoxes {
     height: 360px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .form {
@@ -1292,7 +1299,7 @@ input {
 
   label {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .note {
@@ -1311,59 +1318,62 @@ input {
     font-size: 16px;
     margin-top: 0px;
   }
+
+  ::placeholder {
+    font-size: 16px;
+    margin-left: 5px;
+  }
 }
 @media only screen and (max-width: 480px) {
   #formBoxes {
-    height: 350px;
+    height: 290px;
     width: 100%;
     margin-top: 30px;
   }
 
   .form {
-    height: 30px;
-    width: 270px;
-    font-size: 18px;
+    height: 32px;
+    width: 280px;
   }
 
   label {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .note {
-    height: 180px;
+    height: 130px;
   }
 
   button {
-    height: 30px;
-    width: 290px;
-    font-size: 18px;
+    height: 32px;
+    width: 280px;
+    font-size: 14px;
   }
 
   textarea,
 input {
     height: 25px;
-    width: 200px;
-    font-size: 14px;
+    width: 140px;
+    font-size: 15px;
     margin-top: 0px;
   }
 
   ::placeholder {
-    font-size: 16px;
-    margin-left: 65px;
+    font-size: 15px;
+    margin-left: 5px;
   }
 }
 @media only screen and (max-width: 320px) {
   #formBoxes {
-    height: 300px;
+    height: 290px;
     width: 100%;
     margin-top: 30px;
   }
 
   .form {
-    height: 25px;
-    width: 200px;
-    font-size: 14px;
+    height: 30px;
+    width: 210px;
   }
 
   label {
@@ -1372,30 +1382,26 @@ input {
   }
 
   .note {
-    height: 180px;
+    height: 130px;
   }
 
   button {
-    height: 20px;
-    width: 200px;
+    height: 30px;
+    width: 210px;
     font-size: 14px;
   }
 
   textarea,
 input {
-    height: 20px;
-    width: 170px;
+    height: 25px;
+    width: 140px;
     font-size: 14px;
     margin-top: 0px;
   }
 
   ::placeholder {
     font-size: 14px;
-  }
-
-  nav i {
-    font-size: 15px;
-    margin-top: 15px;
+    margin-left: 5px;
   }
 }
 header {
@@ -1653,7 +1659,7 @@ nav i:hover {
   }
 
   .footerList {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 320px) {
