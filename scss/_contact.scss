@@ -98,7 +98,7 @@ textarea {
     }
     
     button {
-        height: 45px;
+        height: 40px;
         width: 450px;
     }
     
@@ -106,7 +106,6 @@ textarea {
     input {
         height: 30px;
         width: 370px;
-        margin-left: 65px;
     }
 }
 
@@ -141,12 +140,10 @@ textarea {
         height: 30px;
         width: 300px;
         font-size: 16px;
-        margin-top: 0px;
-        margin-left: 60px;
     }
 }
 
-@media only screen and (max-width: 480px) { /* SE DESFASA EL INPUT */
+@media only screen and (max-width: 480px) {
     #formBoxes {
         height: 350px;
         width: 100%;
@@ -174,8 +171,6 @@ textarea {
         height: 20px;
         width: 200px;
         font-size: 16px;
-        margin-left: 55px;
-        margin-top: 0px;
     }
 
     ::placeholder{
@@ -184,7 +179,7 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 320px) { /* SE DESFASA EL INPUT */
+@media only screen and (max-width: 320px) {
     #formBoxes {
         height: 300px;
         width: 100%;
@@ -218,8 +213,6 @@ textarea {
         height: 20px;
         width: 150px;
         font-size: 14px;
-        margin-left: 45px;
-        margin-top: 0;
     }
 
     ::placeholder{
