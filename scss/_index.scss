@@ -4,11 +4,11 @@ body {
 }
 
 h2 {
-    color: rgb(95, 95, 95);
-    font: italic 100 28px serif;
+    color: rgb(50, 50, 50);
+    font: italic 100 55px serif;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    padding: 20px;
+    padding: 50px;
     animation-duration: 4s;
     animation-name: appear;
     animation-delay: 0s;
@@ -62,6 +62,9 @@ img {
     animation-duration: 4s;
     animation-name: appear;
     animation-delay: 0s;
+    height: 400px;
+    width: 400px;
+    margin-top: 80px;
 }
 
 @keyframes appear {
@@ -82,8 +85,9 @@ img {
     }
 
     .logo {
-        height: 550px;
-        width: 550px;
+        height: 350px;
+        width: 350px;
+        margin-top: 50px;
     }
 }
 
@@ -91,12 +95,12 @@ img {
     h2 {
         font: italic 100 25px serif;
         font-family: 'Oswald', sans-serif;
-        padding: 20px;
+        padding: 70px;
     }
 
     .logo {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
     }    
 }
 
@@ -108,8 +112,8 @@ img {
     }
 
     .logo {
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
     }
 }
 
